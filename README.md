@@ -1,3 +1,1 @@
-# snacs
-# snacs
-# snacs
+# Social Network Analysis for Computer Scientists
