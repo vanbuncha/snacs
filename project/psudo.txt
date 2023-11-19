@@ -1,0 +1,33 @@
+randomly select N nodes from the graph
+
+calculate each node's degree:
+	select top N nodes
+
+calculate each node's closeness centrality:
+	select bottom N nodes
+
+calculate each node's betweenness centrality:
+	select top N nodes
+
+
+Area of Repulsion:
+	If node n is selected as a landmark, make sure that any node within the k neighbourhood is not selected
+
+
+Partitioning:
+	Parition the graph and then run each of these algorithms on each partition
+	Paper's Implementation:
+		for each partition pick the node with the highest degree and lowest closeness and highest betweenness
+		border: for each partition pick a node close to the border with a high degree
+
+
+Hybrid Landmark Selection:
+	-->randomly select a roughly N/3 of nodes from each of the three centralities
+	-->iterate through the top ranking nodes and select each one sequentially from each of the three measures until it selects N nodes
+
+
+Computing Landmarks:
+	for each node in G compute distance to each landmark
+
+https://www.worldscientific.com/doi/abs/10.1142/S0218127407018403
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9234445&tag=1
